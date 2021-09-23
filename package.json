@@ -16,5 +16,8 @@
     "url": "https://github.com/hellion86/frontend-project-lvl1/issues"
   },
   "homepage": "https://github.com/hellion86/frontend-project-lvl1#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
