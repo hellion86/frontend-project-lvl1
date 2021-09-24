@@ -1,4 +1,4 @@
-name: Node CI
+name: Linter test
 on:
   - push
 
@@ -6,10 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - name: npm install
-        run: |
-          make install
+        run: make install
       - name: Run linter
-        run: |
-          make lint
+        run: make lint
