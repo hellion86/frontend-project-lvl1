@@ -6,7 +6,7 @@ on:
 jobs:
   test-job:
     runs-on: ubuntu-latest
-    
-		steps:
+	steps:
     	- name: npm install
-      run: make lint
+      	run: npm ci
+	run: npx eslint .
