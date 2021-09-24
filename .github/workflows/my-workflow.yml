@@ -7,5 +7,5 @@ jobs:
   test-job:
     runs-on: ubuntu-latest
     steps:
-    	- name: 'my step'
+    	- name: my-step
       run: make lint
