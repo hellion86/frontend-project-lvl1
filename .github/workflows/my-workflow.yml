@@ -1,9 +1,11 @@
 name: 'eslint-test'
+
 on:
   push:
+
 jobs:
   test-job:
     runs-on: ubuntu-latest
     steps:
-      - name: 'my step'
-      	run: npx eslint .
+    	- name: 'my step'
+      run: make lint
