@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
 	steps:
     	- name: npm install
-      run: npm ci
-			run: npx eslint .
+      	run: npm ci
+	run: npx eslint .
