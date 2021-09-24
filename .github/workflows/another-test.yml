@@ -1,0 +1,11 @@
+name: my-worker
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start eslint
+        run: echo "elsint dont work!"
+
