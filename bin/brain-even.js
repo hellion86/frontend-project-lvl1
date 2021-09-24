@@ -14,13 +14,14 @@ const evenGames = () => {
     const question = randomNumber();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('You answer: ');
+    const negativeAnswer = answer === 'yes' ? 'no' : 'yes';
     const checkIsEven = question % 2 === 0;
     if (answer === 'yes' && checkIsEven) {
       console.log('Correct !');
     } else if (answer === 'no' && !checkIsEven) {
       console.log('Correct !');
     } else {
-      console.log('\'yes\' is wrong answer ;(. Correct answer was \'no\'.');
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${negativeAnswer}.`);
       console.log(`Let's try again, ${name}`);
       return;
     }
