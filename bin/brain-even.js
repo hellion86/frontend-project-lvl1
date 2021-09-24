@@ -1,8 +1,12 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
+import helloUserName from '../src/cli.js';
 
 const randomNumber = () => Math.floor(Math.random() * (100 - 1) + 1);
+console.log('Welcome to the Brain Games!');
+const name = helloUserName();
+console.log(`Hello, ${name}!`);
 
 const evenGames = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
@@ -17,11 +21,11 @@ const evenGames = () => {
       console.log('Correct !');
     } else {
       console.log('\'yes\' is wrong answer ;(. Correct answer was \'no\'.');
-      console.log('Let\'s try again, Slavok');
+      console.log(`Let's try again, ${name}`);
       return;
     }
   }
-  console.log('Congratulations!');
+  console.log(`Congratulations, ${name}!`);
 };
 console.log(evenGames());
 export default evenGames;
