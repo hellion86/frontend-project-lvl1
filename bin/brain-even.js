@@ -3,7 +3,6 @@
 import readlineSync from 'readline-sync';
 import { helloUserName, randomNumber } from '../src/cli.js';
 
-console.log('\nWelcome to the Brain Games!');
 const name = helloUserName();
 console.log(`Hello, ${name}!`);
 
