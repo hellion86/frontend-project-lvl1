@@ -1,8 +1,8 @@
 import readlineSync from 'readline-sync';
 
-const helloUserName = () => {
+export const helloUserName = () => {
   const name = readlineSync.question('May I have your name? ');
   return name;
 };
 
-export default helloUserName;
+export const randomNumber = () => Math.floor(Math.random() * (100 - 1) + 1);
