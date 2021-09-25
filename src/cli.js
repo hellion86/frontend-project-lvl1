@@ -22,3 +22,13 @@ export const doCalculation = (a, b, action) => {
   }
   return a * b;
 };
+
+export const findGcd = (num1, num2) => {
+  const max = num1 > num2 ? num1 : num2;
+  const min = num1 < num2 ? num1 : num2;
+  if (max % min === 0) {
+    return min;
+  }
+  const res = max % min;
+  return findGcd(res, min);
+};
