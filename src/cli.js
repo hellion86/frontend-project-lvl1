@@ -56,3 +56,16 @@ export const hideArray = (coll, itemToHide) => {
   result[itemToHide] = '..';
   return result;
 };
+
+export const isNumPrime = (num) => {
+  let check = 0;
+  if (num === 1) {
+    return true;
+  }
+  for (let i = 2; i <= num; i += 1) {
+    if (num % i === 0) {
+      check += 1;
+    }
+  }
+  return check === 1;
+};
