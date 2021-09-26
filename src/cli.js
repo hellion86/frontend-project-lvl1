@@ -7,6 +7,7 @@ export const helloUserName = () => {
 };
 
 export const randomNumber = () => Math.floor(Math.random() * (100 - 1) + 1);
+export const randomLen = () => Math.floor(Math.random() * (10 - 5) + 5);
 
 export const randomAction = () => {
   const coll = ['-', '+', '*'];
@@ -31,4 +32,27 @@ export const findGcd = (num1, num2) => {
   }
   const res = max % min;
   return findGcd(res, min);
+};
+
+export const makeArray = () => {
+  const len = randomLen();
+  let item = randomNumber();
+  const increment = randomLen();
+  const coll = [item];
+  for (let i = 1; i <= len - 1; i += 1) {
+    item += increment;
+    coll.push(item);
+  }
+  return coll;
+};
+
+export const hideItem = (coll) => {
+  const position = Math.floor(Math.random() * (coll.length));
+  return position;
+};
+
+export const hideArray = (coll, itemToHide) => {
+  const result = coll;
+  result[itemToHide] = '..';
+  return result;
 };
