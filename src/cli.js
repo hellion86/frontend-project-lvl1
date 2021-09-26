@@ -54,7 +54,7 @@ export const hideItem = (coll) => {
 export const hideArray = (coll, itemToHide) => {
   const result = coll;
   result[itemToHide] = '..';
-  return result;
+  return result.join(' ');
 };
 
 export const isNumPrime = (num) => {

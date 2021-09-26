@@ -17,7 +17,7 @@ const progressionGames = () => {
     const collection = makeArray();
     const itemPosition = hideItem(collection);
     const question = collection[itemPosition];
-    console.log(hideArray(collection, itemPosition));
+    console.log(`Question: ${hideArray(collection, itemPosition)}`);
     const answer = Number(readlineSync.question('You answer: '));
     if (answer === question) {
       console.log('Correct !');
