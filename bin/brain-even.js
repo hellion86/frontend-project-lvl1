@@ -20,7 +20,7 @@ const evenGames = () => {
       console.log('Correct !');
     } else {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${negativeAnswer}.`);
-      console.log(`Let's try again, ${name}`);
+      console.log(`Let's try again, ${name}!`);
       return;
     }
   }

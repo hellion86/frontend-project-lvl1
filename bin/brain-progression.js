@@ -23,7 +23,7 @@ const progressionGames = () => {
       console.log('Correct !');
     } else if (answer !== question) {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${question}.`);
-      console.log(`Let's try again, ${name}`);
+      console.log(`Let's try again, ${name}!`);
       return;
     }
   }
