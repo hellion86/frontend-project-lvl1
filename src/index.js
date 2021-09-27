@@ -9,6 +9,7 @@ export const evenG = (name) => {
   const answer = readlineSync.question('You answer: ');
   const negativeAnswer = answer === 'yes' ? 'no' : 'yes';
   const checkIsEven = question % 2 === 0;
+  return [answer, checkIsEven];
 };
 
 export const startGames = () => {
@@ -17,9 +18,10 @@ export const startGames = () => {
   console.log(`Hello, ${name}!`);
 
   for (let i = 0; i < 3; i += 1) {
-    evenG(name);
+    const result = evenG(name);
+    console.log(result);
   }
-  if (check === true) {
+  /*if (check === true) {
     (answer === 'yes' && checkIsEven) {
       console.log('Correct !');
     }(answer === 'no' && !checkIsEven) {
@@ -31,12 +33,32 @@ export const startGames = () => {
     console.log(`Let's try again, ${name}!`);
     return;
   }
-  console.log(`Congratulations, ${name}!`);
+  console.log(`Congratulations, ${name}!`);*/
 };
 
 console.log(startGames());
 
 /*
+Мне нужно без массива
+
+let h = 'hello';
+let w = 'world';
+
+function MyTest(a, b) {
+  return `${a}, ${b}`;
+}
+
+console.log(MyTest(h, w))
+
+function getValues() {
+    return [getFirstValue(), getSecondValue()];
+}
+Тогда вы можете получить к ним доступ следующим образом:
+
+var values = getValues();
+var first = values[0];
+var second = values[1];
+
 все вводы и выводы (велком, приветствие, сообщения о выигрыше/проигрыше и т.д.)
 Все это делается путем использования напрямую readlineSync и console.log. Никаких оберток над ними не нужно.
 Цикл раундов. Внутри цикла получается ответ юзера и сравнивается с правильным ответом. 
