@@ -1,10 +1,9 @@
-import readlineSync from 'readline-sync';
-import { randomNumber, randomLen } from '../index.js';
+import { randomNum } from '../index.js';
 
 export const makeArray = () => {
-  const len = randomLen();
-  let item = randomNumber();
-  const increment = randomLen();
+  const len = randomNum(5, 10);
+  let item = randomNum(1, 100);
+  const increment = randomNum(2, 7);
   const coll = [item];
   for (let i = 1; i <= len - 1; i += 1) {
     item += increment;
@@ -24,13 +23,12 @@ export const hideArray = (coll, itemToHide) => {
   return result.join(' ');
 };
 
-export const progressionGameAsq = () => console.log('What number is missing in the progression?');
+export const progressionGameAsq = 'What number is missing in the progression?';
 
 export const progressionGameSrc = () => {
   const collection = makeArray();
   const itemPosition = hideItem(collection);
-  const question = collection[itemPosition];
-  console.log(`Question: ${hideArray(collection, itemPosition)}`);
-  const answer = Number(readlineSync.question('You answer: '));
-  return [answer, question];
+  const answer = collection[itemPosition];
+  const question = `Question: ${hideArray(collection, itemPosition)}`;
+  return [question, answer];
 };
