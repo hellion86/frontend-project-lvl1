@@ -1,9 +1,20 @@
 import readlineSync from 'readline-sync';
-import {
-  randomNumber,
-  randomAction,
-  doCalculation,
-} from '../index.js';
+import { randomNumber } from '../index.js';
+
+export const randomAction = () => {
+  const coll = ['-', '+', '*'];
+  return coll[Math.floor(Math.random() * (4 - 1))];
+};
+
+export const doCalculation = (a, b, action) => {
+  if (action === '+') {
+    return a + b;
+  }
+  if (action === '-') {
+    return a - b;
+  }
+  return a * b;
+};
 
 export const calcGameAsq = () => console.log('What is the result of the expression?');
 
