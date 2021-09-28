@@ -52,6 +52,22 @@ export const hideArray = (coll, itemToHide) => {
   return result.join(' ');
 };
 
+export const isNumPrime = (num) => {
+  let check = 0;
+  if (num === 1) {
+    return 'yes';
+  }
+  for (let i = 2; i <= num; i += 1) {
+    if (num % i === 0) {
+      check += 1;
+    }
+  }
+  if (check === 1) {
+    return 'yes';
+  }
+  return 'no';
+};
+
 export const startGame = (gameName, gameasq) => {
   console.log('\nWelcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
