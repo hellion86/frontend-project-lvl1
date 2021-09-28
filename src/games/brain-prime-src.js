@@ -8,6 +8,5 @@ export const primeGameSrc = () => {
   console.log(`Question: ${question}`);
   const answer = readlineSync.question('You answer: ');
   const checkIsEven = isNumPrime(question);
-  console.log(checkIsEven);
   return [answer, checkIsEven];
 };
