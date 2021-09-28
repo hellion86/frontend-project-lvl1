@@ -6,8 +6,8 @@ export const helloUserName = () => {
   return name;
 };
 
-export const randomNumber = () => Math.floor(Math.random() * (100 - 1) + 1);
 export const randomLen = () => Math.floor(Math.random() * (10 - 5) + 5);
+export const randomNumber = () => Math.floor(Math.random() * (100 - 1) + 1);
 
 export const randomAction = () => {
   const coll = ['-', '+', '*'];

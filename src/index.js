@@ -1,66 +1,73 @@
 import readlineSync from 'readline-sync';
-import { randomNumber } from './cli.js';
 
-export const evenG = (name) => {
-  const check = false;
-  const question = randomNumber();
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  console.log(`Question: ${question}`);
-  const answer = readlineSync.question('You answer: ');
-  const negativeAnswer = answer === 'yes' ? 'no' : 'yes';
-  const checkIsEven = question % 2 === 0;
-  return [answer, checkIsEven];
+export const randomNumber = () => Math.floor(Math.random() * (100 - 1) + 1);
+
+export const randomLen = () => Math.floor(Math.random() * (10 - 5) + 5);
+
+export const randomAction = () => {
+  const coll = ['-', '+', '*'];
+  return coll[Math.floor(Math.random() * (4 - 1))];
 };
 
-export const startGames = () => {
+export const doCalculation = (a, b, action) => {
+  if (action === '+') {
+    return a + b;
+  }
+  if (action === '-') {
+    return a - b;
+  }
+  return a * b;
+};
+
+export const findGcd = (num1, num2) => {
+  const max = num1 > num2 ? num1 : num2;
+  const min = num1 < num2 ? num1 : num2;
+  if (max % min === 0) {
+    return min;
+  }
+  const res = max % min;
+  return findGcd(res, min);
+};
+
+export const makeArray = () => {
+  const len = randomLen();
+  let item = randomNumber();
+  const increment = randomLen();
+  const coll = [item];
+  for (let i = 1; i <= len - 1; i += 1) {
+    item += increment;
+    coll.push(item);
+  }
+  return coll;
+};
+
+export const hideItem = (coll) => {
+  const position = Math.floor(Math.random() * (coll.length));
+  return position;
+};
+
+export const hideArray = (coll, itemToHide) => {
+  const result = coll;
+  result[itemToHide] = '..';
+  return result.join(' ');
+};
+
+export const startGame = (gameName, gameasq) => {
   console.log('\nWelcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-
+  gameasq();
   for (let i = 0; i < 3; i += 1) {
-    const result = evenG(name);
-    console.log(result);
-  }
-  /*if (check === true) {
-    (answer === 'yes' && checkIsEven) {
+    const result = gameName();
+    const answer = result[0];
+    const question = result[1];
+    if (answer === question) {
       console.log('Correct !');
-    }(answer === 'no' && !checkIsEven) {
-      console.log('Correct !');
-    } 
+    } else if (answer !== question) {
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${question}.`);
+      console.log(`Let's try again, ${name}!`);
+      return;
+    }
   }
-  if (check === false) {
-    console.log(`${answer} is wrong answer ;(. Correct answer was ${negativeAnswer}.`);
-    console.log(`Let's try again, ${name}!`);
-    return;
-  }
-  console.log(`Congratulations, ${name}!`);*/
+  console.log(`Congratulations, ${name}!`);
 };
-
-console.log(startGames());
-
-/*
-Мне нужно без массива
-
-let h = 'hello';
-let w = 'world';
-
-function MyTest(a, b) {
-  return `${a}, ${b}`;
-}
-
-console.log(MyTest(h, w))
-
-function getValues() {
-    return [getFirstValue(), getSecondValue()];
-}
-Тогда вы можете получить к ним доступ следующим образом:
-
-var values = getValues();
-var first = values[0];
-var second = values[1];
-
-все вводы и выводы (велком, приветствие, сообщения о выигрыше/проигрыше и т.д.)
-Все это делается путем использования напрямую readlineSync и console.log. Никаких оберток над ними не нужно.
-Цикл раундов. Внутри цикла получается ответ юзера и сравнивается с правильным ответом. 
-
-*/
