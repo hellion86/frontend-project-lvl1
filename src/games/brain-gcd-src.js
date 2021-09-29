@@ -1,8 +1,8 @@
 import { randomNum } from '../index.js';
 
 export const findGcd = (num1, num2) => {
-  const max = num1 > num2 ? num1 : num2;
-  const min = num1 < num2 ? num1 : num2;
+  const max = Math.max(num1, num2);
+  const min = Math.min(num1, num2);
   if (max % min === 0) {
     return min;
   }
