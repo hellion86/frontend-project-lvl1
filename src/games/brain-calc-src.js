@@ -1,4 +1,4 @@
-import randomNum from '../utils.js';
+import randomNum from '../helpers.js';
 import runEngine from '../index.js';
 
 const gameAsq = 'What is the result of the expression?';
