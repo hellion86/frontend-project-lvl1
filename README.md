@@ -3,6 +3,18 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/8047d000d9dd58f2d463/maintainability)](https://codeclimate.com/github/hellion86/frontend-project-lvl1/maintainability)
 [![Node CI](https://github.com/hellion86/frontend-project-lvl1/workflows/linter-test/badge.svg)](https://github.com/hellion86/frontend-project-lvl1/actions)
 
+**Brain Games** is a set of small console games. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered to be completed. Wrong answers end the game and offer to play it again.
+
+### Installation
+
+_This game is for the Node.js v16.8.0 and later._
+
+**For installation:**
+
+- Clone this repository
+
+- Run the command: _make install_
+
 ### Brain-even game:
 [![asciicast](https://asciinema.org/a/x8sdTHu6ne8BdfszmntRvYOVK.svg)](https://asciinema.org/a/x8sdTHu6ne8BdfszmntRvYOVK)
 ### Brain-calc game:
