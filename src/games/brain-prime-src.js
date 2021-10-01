@@ -1,4 +1,4 @@
-import randomNum from '../helpers.js';
+import randomNum from '../utils.js';
 import runEngine from '../index.js';
 
 const gameAsq = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -6,7 +6,7 @@ const gameAsq = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const isPrime = (num) => {
   let check = 0;
   if (num === 1) {
-    return 'yes';
+    return true;
   }
   for (let i = 2; i <= num; i += 1) {
     if (num % i === 0) {

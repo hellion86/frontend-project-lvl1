@@ -1,4 +1,4 @@
-import randomNum from '../helpers.js';
+import randomNum from '../utils.js';
 import runEngine from '../index.js';
 
 const gameAsq = 'What number is missing in the progression?';
