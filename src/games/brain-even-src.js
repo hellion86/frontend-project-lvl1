@@ -1,10 +1,22 @@
-import { randomNum } from '../index.js';
+import randomNum from '../helpers.js';
+import runEngine from '../index.js';
 
-export const evenGameAsq = 'Answer "yes" if the number is even, otherwise answer "no".';
+const gameAsq = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-export const evenGameSrc = () => {
+const isEven = (number) => (number % 2 === 0);
+
+const check = (number) => {
+  const result = isEven(number) ? 'yes' : 'no';
+  return result;
+};
+
+const generateRound = () => {
   const num1 = randomNum(1, 100);
-  const question = `Question: ${num1}`;
-  const answer = num1 % 2 === 0 ? 'yes' : 'no';
+  const question = `${num1}`;
+  const answer = String(check(num1));
   return [question, answer];
 };
+
+const startGame = () => runEngine(generateRound, gameAsq);
+
+export default startGame;
