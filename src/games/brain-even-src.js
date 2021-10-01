@@ -1,4 +1,4 @@
-import randomNum from '../helpers.js';
+import randomNum from '../utils.js';
 import runEngine from '../index.js';
 
 const gameAsq = 'Answer "yes" if the number is even, otherwise answer "no".';
