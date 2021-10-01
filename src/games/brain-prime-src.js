@@ -1,4 +1,4 @@
-import { randomNum } from '../index.js';
+import randomNum from '../helpers.js';
 
 export const isNumPrime = (num) => {
   let check = 0;
@@ -17,7 +17,7 @@ export const primeGameAsq = 'Answer "yes" if given number is prime. Otherwise an
 
 export const primeGameSrc = () => {
   const num1 = randomNum(1, 100);
-  const question = `Question: ${num1}`;
+  const question = `${num1}`;
   const answer = isNumPrime(num1);
   return [question, answer];
 };

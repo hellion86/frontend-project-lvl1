@@ -1,4 +1,4 @@
-import { randomNum } from '../index.js';
+import randomNum from '../helpers.js';
 
 export const makeArray = () => {
   const len = randomNum(5, 10);
@@ -29,6 +29,6 @@ export const progressionGameSrc = () => {
   const collection = makeArray();
   const itemPosition = hideItem(collection);
   const answer = collection[itemPosition];
-  const question = `Question: ${hideArray(collection, itemPosition)}`;
+  const question = `${hideArray(collection, itemPosition)}`;
   return [question, answer];
 };
