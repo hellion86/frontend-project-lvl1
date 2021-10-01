@@ -26,5 +26,3 @@ const generateRound = () => {
 const startGame = () => runEngine(generateRound, gameAsq);
 
 export default startGame;
-
-console.log(isPrime(31));
