@@ -1,6 +1,9 @@
 import randomNum from '../helpers.js';
+import runEngine from '../index.js';
 
-export const makeArray = () => {
+const gameAsq = 'What number is missing in the progression?';
+
+const makeArray = () => {
   const len = randomNum(5, 10);
   let item = randomNum(1, 100);
   const increment = randomNum(2, 7);
@@ -12,23 +15,20 @@ export const makeArray = () => {
   return coll;
 };
 
-export const hideItem = (coll) => {
-  const position = Math.floor(Math.random() * (coll.length));
-  return position;
-};
-
-export const hideArray = (coll, itemToHide) => {
+const hideArray = (coll, itemToHide) => {
   const result = coll;
   result[itemToHide] = '..';
   return result.join(' ');
 };
 
-export const progressionGameAsq = 'What number is missing in the progression?';
-
-export const progressionGameSrc = () => {
+const generateRound = () => {
   const collection = makeArray();
-  const itemPosition = hideItem(collection);
-  const answer = collection[itemPosition];
+  const itemPosition = randomNum(0, collection.length - 1);
+  const answer = String(collection[itemPosition]);
   const question = `${hideArray(collection, itemPosition)}`;
   return [question, answer];
 };
+
+const startGame = () => runEngine(generateRound, gameAsq);
+
+export default startGame;

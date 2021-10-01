@@ -13,7 +13,7 @@ const check = (number) => {
 const generateRound = () => {
   const num1 = randomNum(1, 100);
   const question = `${num1}`;
-  const answer = String(check(num1));
+  const answer = check(num1);
   return [question, answer];
 };
 
