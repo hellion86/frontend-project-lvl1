@@ -15,6 +15,8 @@ _This game is for the Node.js v16.8.0 and later._
 
 - Run the command: _make install_
 
+- Run the command: _sudo npm link_
+
 ### Brain-even game:
 [![asciicast](https://asciinema.org/a/x8sdTHu6ne8BdfszmntRvYOVK.svg)](https://asciinema.org/a/x8sdTHu6ne8BdfszmntRvYOVK)
 ### Brain-calc game:
@@ -22,6 +24,6 @@ _This game is for the Node.js v16.8.0 and later._
 ### Brain-gcd game:
 [![asciicast](https://asciinema.org/a/DEAk90Umi1dH1puwHmAHdz3HP.svg)](https://asciinema.org/a/DEAk90Umi1dH1puwHmAHdz3HP)
 ### Brain-progression game:
-[![asciicast](https://asciinema.org/a/EK6ANs4kLcrulbSkM37PJkAYr.svg)](https://asciinema.org/a/EK6ANs4kLcrulbSkM37PJkAYr)
+[![asciicast](https://asciinema.org/a/ZIH900KonVxuGiluAxpAJfMlw.svg)](https://asciinema.org/a/ZIH900KonVxuGiluAxpAJfMlw)
 ### Brain-prime game:
 [![asciicast](https://asciinema.org/a/cvYRX7MkKfUzlwiLO7eQ5FEqu.svg)](https://asciinema.org/a/cvYRX7MkKfUzlwiLO7eQ5FEqu)
