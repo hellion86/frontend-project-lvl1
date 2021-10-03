@@ -1,11 +1,11 @@
-import randomNum from '../utils.js';
+import randomNumber from '../utils.js';
 import runEngine from '../index.js';
 
 const gameAsq = 'Find the greatest common divisor of given numbers.';
 
-const findGcd = (num1, num2) => {
-  const min = Math.min(num1, num2);
-  const max = Math.max(num1, num2);
+const findGcd = (numberA, numberB) => {
+  const min = Math.min(numberA, numberB);
+  const max = Math.max(numberA, numberB);
   const mod = max % min;
   if (mod === 0) {
     return min;
@@ -14,10 +14,10 @@ const findGcd = (num1, num2) => {
 };
 
 const generateRound = () => {
-  const num1 = randomNum(1, 100);
-  const num2 = randomNum(1, 100);
-  const question = `${num1} ${num2}`;
-  const answer = String(findGcd(num1, num2));
+  const numberA = randomNumber(1, 100);
+  const numberB = randomNumber(1, 100);
+  const question = `${numberA} ${numberB}`;
+  const answer = String(findGcd(numberA, numberB));
   return [question, answer];
 };
 

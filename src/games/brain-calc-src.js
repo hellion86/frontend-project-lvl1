@@ -1,32 +1,28 @@
-import randomNum from '../utils.js';
+import randomNumber from '../utils.js';
 import runEngine from '../index.js';
 
 const gameAsq = 'What is the result of the expression?';
 
-const doCalculation = (a, b, action) => {
-  let result = 0;
+const calculate = (a, b, action) => {
   switch (action) {
     case '+':
-      result = a + b;
-      break;
+      return a + b;
     case '-':
-      result = a - b;
-      break;
+      return a - b;
     case '*':
-      result = a * b;
-      break;
+      return a * b;
     default:
+      return 'No numbers are present!';
   }
-  return result;
 };
 
 const generateRound = () => {
-  const arrActions = ['-', '+', '*'];
-  const action = arrActions[randomNum(0, 2)];
-  const num1 = randomNum(1, 100);
-  const num2 = randomNum(1, 100);
-  const question = `${num1} ${action} ${num2}`;
-  const answer = String(doCalculation(num1, num2, action));
+  const arrayOfActions = ['-', '+', '*'];
+  const action = arrayOfActions[randomNumber(0, 2)];
+  const numberA = randomNumber(1, 100);
+  const numberB = randomNumber(1, 100);
+  const question = `${numberA} ${action} ${numberB}`;
+  const answer = String(calculate(numberA, numberB, action));
   return [question, answer];
 };
 

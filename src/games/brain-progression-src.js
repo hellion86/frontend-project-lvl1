@@ -1,31 +1,30 @@
-import randomNum from '../utils.js';
+import randomNumber from '../utils.js';
 import runEngine from '../index.js';
 
 const gameAsq = 'What number is missing in the progression?';
 
-const makeArray = () => {
-  const len = randomNum(5, 10);
-  let item = randomNum(1, 100);
-  const increment = randomNum(2, 7);
-  const coll = [item];
-  for (let i = 1; i <= len - 1; i += 1) {
-    item += increment;
-    coll.push(item);
+const makeArray = (first, step, length) => {
+  const collection = [];
+  for (let i = 0; i <= length - 1; i += 1) {
+    collection.push(first + i * step);
   }
-  return coll;
+  return collection;
 };
 
-const hideArray = (coll, itemToHide) => {
-  const result = coll;
+const hideElement = (collection, itemToHide) => {
+  const result = collection;
   result[itemToHide] = '..';
   return result.join(' ');
 };
 
 const generateRound = () => {
-  const collection = makeArray();
-  const itemPosition = randomNum(0, collection.length - 1);
-  const answer = String(collection[itemPosition]);
-  const question = `${hideArray(collection, itemPosition)}`;
+  const firstElementArray = randomNumber(1, 100);
+  const stepOfArray = randomNumber(2, 7);
+  const lengthArray = randomNumber(5, 10);
+  const collection = makeArray(firstElementArray, stepOfArray, lengthArray);
+  const hiddenItemPosition = randomNumber(0, collection.length - 1);
+  const answer = String(collection[hiddenItemPosition]);
+  const question = `${hideElement(collection, hiddenItemPosition)}`;
   return [question, answer];
 };
 

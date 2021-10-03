@@ -1,15 +1,15 @@
-import randomNum from '../utils.js';
+import randomNumber from '../utils.js';
 import runEngine from '../index.js';
 
 const gameAsq = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const isPrime = (num) => {
+const isPrime = (number) => {
   let check = 0;
-  if (num === 1) {
+  if (number === 1) {
     return true;
   }
-  for (let i = 2; i <= num; i += 1) {
-    if (num % i === 0) {
+  for (let i = 2; i <= number; i += 1) {
+    if (number % i === 0) {
       check += 1;
     }
   }
@@ -17,9 +17,9 @@ const isPrime = (num) => {
 };
 
 const generateRound = () => {
-  const num1 = randomNum(1, 100);
-  const question = `${num1}`;
-  const answer = isPrime(num1) ? 'yes' : 'no';
+  const number = randomNumber(1, 100);
+  const question = `${number}`;
+  const answer = isPrime(number) ? 'yes' : 'no';
   return [question, answer];
 };
 
