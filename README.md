@@ -22,8 +22,8 @@ _This game is for the Node.js v16.8.0 and later._
 ### Brain-calc game:
 [![asciicast](https://asciinema.org/a/vUhRBioL0S5ERtzsms5508DBZ.svg)](https://asciinema.org/a/vUhRBioL0S5ERtzsms5508DBZ)
 ### Brain-gcd game:
-[![asciicast](https://asciinema.org/a/DEAk90Umi1dH1puwHmAHdz3HP.svg)](https://asciinema.org/a/DEAk90Umi1dH1puwHmAHdz3HP)
+[![asciicast](https://asciinema.org/a/CMBsu07ZvwwBK0gTauuDHTTah.svg)](https://asciinema.org/a/CMBsu07ZvwwBK0gTauuDHTTah)
 ### Brain-progression game:
-[![asciicast](https://asciinema.org/a/ZIH900KonVxuGiluAxpAJfMlw.svg)](https://asciinema.org/a/ZIH900KonVxuGiluAxpAJfMlw)
+[![asciicast](https://asciinema.org/a/fsWQVcSajSRykb8XgmXhYzcyb.svg)](https://asciinema.org/a/fsWQVcSajSRykb8XgmXhYzcyb)
 ### Brain-prime game:
 [![asciicast](https://asciinema.org/a/Ci02kRBLVylG8geTdvYNFcrME.svg)](https://asciinema.org/a/Ci02kRBLVylG8geTdvYNFcrME)
