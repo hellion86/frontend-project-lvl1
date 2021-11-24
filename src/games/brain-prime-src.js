@@ -1,4 +1,4 @@
-import randomNumber from '../utils.js';
+import generateNumber from '../utils.js';
 import runEngine from '../index.js';
 
 const gameAsq = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -17,7 +17,7 @@ const isPrime = (number) => {
 };
 
 const generateRound = () => {
-  const number = randomNumber(1, 100);
+  const number = generateNumber(1, 100);
   const question = `${number}`;
   const answer = isPrime(number) ? 'yes' : 'no';
   return [question, answer];
