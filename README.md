@@ -6,7 +6,7 @@
 ## Descriprion
 :basketball:Brain Games is a set of small console games. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered to be completed. Wrong answers end the game and offer to play it again.
 
-### 1. install dependencies:
+### 1. Install dependencies:
 _This game is for the Node.js v16.8.0 and later._
 
 ```
