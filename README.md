@@ -22,11 +22,11 @@ Games will be available in the terminal by their name
 
 ### :star:Brain-even game:
 [![asciicast](https://asciinema.org/a/t6g5kvW7NRnliGZMxDyw1IZyn.svg)](https://asciinema.org/a/t6g5kvW7NRnliGZMxDyw1IZyn)
-### Brain-calc game:
-:star:[![asciicast](https://asciinema.org/a/vUhRBioL0S5ERtzsms5508DBZ.svg)](https://asciinema.org/a/vUhRBioL0S5ERtzsms5508DBZ)
-### Brain-gcd game:
-:star:[![asciicast](https://asciinema.org/a/CMBsu07ZvwwBK0gTauuDHTTah.svg)](https://asciinema.org/a/CMBsu07ZvwwBK0gTauuDHTTah)
-### Brain-progression game:
-:star:[![asciicast](https://asciinema.org/a/fsWQVcSajSRykb8XgmXhYzcyb.svg)](https://asciinema.org/a/fsWQVcSajSRykb8XgmXhYzcyb)
-### Brain-prime game:
-:star:[![asciicast](https://asciinema.org/a/Ci02kRBLVylG8geTdvYNFcrME.svg)](https://asciinema.org/a/Ci02kRBLVylG8geTdvYNFcrME)
+### :star:Brain-calc game:
+[![asciicast](https://asciinema.org/a/vUhRBioL0S5ERtzsms5508DBZ.svg)](https://asciinema.org/a/vUhRBioL0S5ERtzsms5508DBZ)
+### :star:Brain-gcd game:
+[![asciicast](https://asciinema.org/a/CMBsu07ZvwwBK0gTauuDHTTah.svg)](https://asciinema.org/a/CMBsu07ZvwwBK0gTauuDHTTah)
+### :star:Brain-progression game:
+[![asciicast](https://asciinema.org/a/fsWQVcSajSRykb8XgmXhYzcyb.svg)](https://asciinema.org/a/fsWQVcSajSRykb8XgmXhYzcyb)
+### :star:Brain-prime game:
+[![asciicast](https://asciinema.org/a/Ci02kRBLVylG8geTdvYNFcrME.svg)](https://asciinema.org/a/Ci02kRBLVylG8geTdvYNFcrME)
