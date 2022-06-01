@@ -20,8 +20,8 @@ $ sudo npm link
 
 Games will be available in the terminal by their name
 
-### Brain-even game:
-:star:[![asciicast](https://asciinema.org/a/t6g5kvW7NRnliGZMxDyw1IZyn.svg)](https://asciinema.org/a/t6g5kvW7NRnliGZMxDyw1IZyn)
+### :star:Brain-even game:
+[![asciicast](https://asciinema.org/a/t6g5kvW7NRnliGZMxDyw1IZyn.svg)](https://asciinema.org/a/t6g5kvW7NRnliGZMxDyw1IZyn)
 ### Brain-calc game:
 :star:[![asciicast](https://asciinema.org/a/vUhRBioL0S5ERtzsms5508DBZ.svg)](https://asciinema.org/a/vUhRBioL0S5ERtzsms5508DBZ)
 ### Brain-gcd game:
