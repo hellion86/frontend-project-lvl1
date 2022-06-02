@@ -1,5 +1,5 @@
-import generateNumber from '../utils.js';
 import runEngine from '../index.js';
+import { generateRound } from '../utils.js';
 
 const gameAsq = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -16,13 +16,6 @@ const isPrime = (number) => {
   return check === 1;
 };
 
-const generateRound = () => {
-  const number = generateNumber(1, 100);
-  const question = `${number}`;
-  const answer = isPrime(number) ? 'yes' : 'no';
-  return [question, answer];
-};
-
-const startGame = () => runEngine(generateRound, gameAsq);
+const startGame = () => runEngine(generateRound, gameAsq, isPrime);
 
 export default startGame;
